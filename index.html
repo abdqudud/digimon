@@ -1,20 +1,59 @@
 
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Digimon TCG - BT01 Binder</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digimon TCG - BT01 Collector Binder</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #2e2e2e, #4a4a4a);
+      color: #fff;
+    }.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  border: 2px solid #777;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.card.owned {
+  border-color: gold;
+  background-color: rgba(255, 215, 0, 0.1);
+  font-weight: bold;
+}
+
+  </style>
 </head>
 <body>
-  <h1>Digimon TCG - BT01 Collector Binder</h1>
-  <div class="binder">
-    <div class="card owned">BT1-001</div>
-    <div class="card owned">BT1-002</div>
-    <div class="card">BT1-003</div>
-    <div class="card">BT1-004</div>
-    <div class="card">BT1-005</div>
+  <div class="container">
+    <h1>Digimon TCG - BT01 Collector Binder</h1>
+    <div class="grid">
+      <div class="card owned">BT1-001</div>
+      <div class="card owned">BT1-002</div>
+      <div class="card">BT1-003</div>
+      <div class="card">BT1-004</div>
+      <div class="card">BT1-005</div>
+    </div>
   </div>
 </body>
 </html>
